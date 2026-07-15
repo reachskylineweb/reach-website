@@ -1,0 +1,109 @@
+Created At: 2026-07-15T06:30:50Z
+Completed At: 2026-07-15T06:30:51Z
+File Path: `file:///d:/Reachskyline%20web/index.html`
+Total Lines: 1201
+Total Bytes: 61981
+Showing lines 150 to 250
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+150:               <div class="pedestal-reflection"></div>
+151:             </div>
+152:             <!-- Soft dynamic shadow cast from the floating coin onto the pedestal surface -->
+153:             <div class="pedestal-shadow" id="pedestalShadow"></div>
+154:           </div>
+155:           
+156:           <!-- True 3D Solid Polygonal Coin Logo Container -->
+157:           <div class="logo-3d-container" id="logo3DContainer">
+158:             <!-- Front Face -->
+159:             <div class="logo-3d-layer face-front">
+160:               <div class="logo-coin-face">
+161:                 <img src="https://res.cloudinary.com/srfbqmic/image/upload/v1784008213/Gemini_Generated_Image_fkqyyffkqyyffkqy_fl8wap.png" alt="Reach Skyline 3D Logo" class="logo-image-core">
+162:                 <div class="chrome-glare"></div>
+163:               </div>
+164:             </div>
+165:             
+166:             <!-- Back Face -->
+167:             <div class="logo-3d-layer face-back">
+168:               <div class="logo-coin-face">
+169:                 <img src="https://res.cloudinary.com/srfbqmic/image/upload/v1784008213/Gemini_Generated_Image_fkqyyffkqyyffkqy_fl8wap.png" alt="Reach Skyline 3D Logo" class="logo-image-core">
+170:                 <div class="chrome-glare"></div>
+171:               </div>
+172:             </div>
+173:             <div class="logo-3d-layer face-back">
+174:               <div class="logo-coin-face mirrored-back">
+175:                 <img src="https://res.cloudinary.com/srfbqmic/image/upload/v1784008213/Gemini_Generated_Image_fkqyyffkqyyffkqy_fl8wap.png" alt="Reach Skyline 3D Logo" class="logo-image-core">
+176:                 <div class="chrome-glare"></div>
+177:               </div>
+178:             </div>
+179:           </div>
+180:         </div>
+181:       </div>
+182:     </div>
+183: 
+184: 
+185:   </header>
+186: 
+187:   <!-- Trusted Clients Marquee Section -->
+188:   <section class="clients">
+189:     <div class="marquee-container">
+190:       <div class="marquee-track" id="marqueeTrack">
+191:         <!-- Loop 1 -->
+192:         <div class="marquee-logo">
+193:           <img src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/chatgpt.svg" alt="ChatGPT" class="logo-img">
+194:           <span class="logo-text">ChatGPT</span>
+195:         </div>
+196:         <div class="marquee-logo">
+197:           <img src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/claude.svg" alt="Claude AI" class="logo-img">
+198:           <span class="logo-text">Claude AI</span>
+199:         </div>
+200:         <div class="marquee-logo">
+201:           <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/gravity.png" alt="Antigravity" class="logo-img">
+202:           <span class="logo-text">Antigravity</span>
+203:         </div>
+204:         <div class="marquee-logo">
+205:           <img src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/midjourney.svg" alt="Midjourney" class="logo-img">
+206:           <span class="logo-text">Midjourney</span>
+207:         </div>
+208:         <div class="marquee-logo">
+209:           <img src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/dalle.svg" alt="DALL·E" class="logo-img">
+210:           <span class="logo-text">DALL·E</span>
+211:         </div>
+212:         <div class="marquee-logo">
+213:           <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/runway-ai-icon.svg" alt="Runway" class="logo-img">
+214:           <span class="logo-text">Runway</span>
+215:         </div>
+216:         <div class="marquee-logo">
+217:           <img src="https://cdn.jsdelivr.gh/homarr-labs/dashboard-icons/png/firefly.png" alt="Adobe Firefly" class="logo-img">
+218:           <span class="logo-text">Adobe Firefly</span>
+219:         </div>
+220:         <div class="marquee-logo">
+221:           <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/canva-icon.svg" alt="Canva" class="logo-img">
+222:           <span class="logo-text">Canva</span>
+223:         </div>
+224:         <div class="marquee-logo">
+225:           <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/jasper-icon.svg" alt="Jasper AI" class="logo-img">
+226:           <span class="logo-text">Jasper AI</span>
+227:         </div>
+228:         <div class="marquee-logo">
+229:           <img src="https://unavatar.io/copy.ai" alt="Copy.ai" class="logo-img">
+230:           <span class="logo-text">Copy.ai</span>
+231:         </div>
+232:         <div class="marquee-logo">
+233:           <img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/grammarly.svg" alt="Grammarly" class="logo-img">
+234:           <span class="logo-text">Grammarly</span>
+235:         </div>
+236:         <div class="marquee-logo">
+237:           <img src="https://api.microlink.io?url=https://synthesia.io&embed=logo" alt="Synthesia" class="logo-img">
+238:           <span class="logo-text">Synthesia</span>
+239:         </div>
+240:         <div class="marquee-logo">
+241:           <img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/descript.svg" alt="Descript" class="logo-img">
+242:           <span class="logo-text">Descript</span>
+243:         </div>
+244:         <div class="marquee-logo">
+245:           <img src="https://unavatar.io/semrush.com" alt="SEMrush" class="logo-img">
+246:           <span class="logo-text">SEMrush</span>
+247:         </div>
+248:         <div class="marquee-logo">
+249:           <img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/google-analytics.svg" alt="Google Analytics" class="logo-img">
+250:           <span class="logo-text">Google Analytics</span>
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
