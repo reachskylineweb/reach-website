@@ -1,0 +1,3159 @@
+/* ==========================================================================
+   Reach Skyline - Responsive Overrides (responsive.css)
+   ========================================================================== */
+
+/* Default / Mobile First (< 768px) */
+.hamburger {
+  display: flex;
+}
+
+.nav-menu, .nav-cta {
+  display: none; /* Hide standard nav on mobile */
+}
+
+/* Hero Section Stack */
+.hero-content-wrapper {
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 50px;
+}
+
+.hero-left {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-buttons {
+  justify-content: center;
+}
+
+
+
+.hero-right {
+  height: 320px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.logo-3d-scene {
+  width: 300px;
+  height: 300px;
+}
+
+.logo-3d-container {
+  width: 190px;
+  height: 190px;
+}
+
+.logo-3d-glow {
+  width: 220px;
+  height: 220px;
+}
+
+.pedestal-stage {
+  width: 220px;
+  height: 70px;
+  bottom: 0px;
+}
+
+.pedestal-shadow {
+  width: 120px;
+  height: 120px;
+}
+
+.hero-circle {
+  left: 50% !important;
+  top: 55% !important;
+}
+
+/* Services Stack */
+.services-grid {
+  grid-template-columns: 1fr;
+}
+
+/* About Section Stack */
+.about-grid {
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.about-badge {
+  right: 10px;
+}
+
+.about-features {
+  grid-template-columns: 1fr;
+}
+
+/* Stats Counter Grid Stack */
+.stats-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.why-choose-grid {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.industries-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.insights-grid {
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.navbar {
+  top: 58px;
+}
+
+.navbar.shrunk {
+  top: 0;
+}
+
+
+
+/* Portfolio Stack */
+.portfolio-grid {
+  grid-template-columns: 1fr;
+}
+
+/* Footer Grid Stack */
+.footer-grid {
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.footer-bottom {
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Tablet Breakpoint (768px and up)
+   ========================================================================== */
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 100px 0;
+  }
+  
+  .section-title {
+    font-size: 2.8rem;
+  }
+  
+  /* Services 2 Columns */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  /* Stats grid 4 columns */
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Why Choose Grid 2 columns */
+  .why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Industries Grid 3 columns */
+  .industries-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Insights Grid 2 columns */
+  .insights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar {
+    top: 44px;
+  }
+  
+  /* Portfolio Grid 2 columns */
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  /* Footer 2 Columns */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================================
+   Laptop Breakpoint (1024px and up)
+   ========================================================================== */
+@media screen and (min-width: 1024px) {
+  /* Menu visibility - switch from hamburger to normal menu */
+  .hamburger {
+    display: none;
+  }
+  
+  .nav-menu {
+    display: flex;
+  }
+  
+  .nav-cta {
+    display: flex;
+  }
+  
+  /* Hero 2 Columns layout */
+  .hero-content-wrapper {
+    grid-template-columns: 1.25fr 1fr;
+    text-align: left;
+    gap: 50px;
+  }
+  
+  .hero-left {
+    align-items: flex-start;
+    margin: 0;
+  }
+  
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+  
+
+  
+  .hero-right {
+    height: 520px;
+    margin-top: 0;
+  }
+  
+  .logo-3d-scene {
+    width: 450px;
+    height: 450px;
+  }
+  
+  .logo-3d-container {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .logo-3d-glow {
+    width: 320px;
+    height: 320px;
+  }
+  
+  .logo-3d-shadow {
+    width: 200px;
+  }
+  
+  .hero-headline {
+    font-size: 4rem;
+  }
+  
+  /* Services 3 Columns */
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* About Section 2 Columns */
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+  
+  .about-features {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* Process centered layout */
+  .process-timeline {
+    max-width: 1000px;
+  }
+  
+  .process-line-bg, .process-line-progress {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .process-step {
+    grid-template-columns: 1fr 80px 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+    text-align: right;
+  }
+  
+  .process-step:nth-child(even) {
+    text-align: left;
+  }
+  
+  .process-step:nth-child(even) .process-card {
+    grid-column: 3;
+  }
+  
+  .process-step:nth-child(even) .process-node {
+    grid-column: 2;
+  }
+  
+          <span class="logo-text">Meta Business Suite</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/zapier.svg" alt="Zapier" class="logo-img">\r
+          <span class="logo-text">Zapier</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://unavatar.io/make.com" alt="Make.com" class="logo-img">\r
+          <span class="logo-text">Make.com</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://unavatar.io/manychat.com" alt="ManyChat" class="logo-img">\r
+          <span class="logo-text">ManyChat</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/n8n.png" alt="n8n" class="logo-img">\r
+          <span class="logo-text">n8n</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/zoho.svg" alt="Zoho CRM" class="logo-img">\r
+          <span class="logo-text">Zoho CRM</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/zoho.svg" alt="Zoho Campaigns" class="logo-img">\r
+          <span class="logo-text">Zoho Campaigns</span>\r
+        </div>\r
+        <!-- Loop 2 (For infinite loop) -->\r
+        <div class="marquee-logo">\r
+          <img src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/chatgpt.svg" alt="ChatGPT" class="logo-img">\r
+          <span class="logo-text">ChatGPT</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/claude.svg" alt="Claude AI" class="logo-img">\r
+          <span class="logo-text">Claude AI</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/gravity.png" alt="Antigravity" class="logo-img">\r
+          <span class="logo-text">Antigravity</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/midjourney.svg" alt="Midjourney" class="logo-img">\r
+          <span class="logo-text">Midjourney</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/dalle.svg" alt="DALL·E" class="logo-img">\r
+          <span class="logo-text">DALL·E</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/runway-ai-icon.svg" alt="Runway" class="logo-img">\r
+          <span class="logo-text">Runway</span>\r
+  .hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 640px;
+  }
+  
+  .section {
+    padding: 120px 0;
+  }
+}
+\r
+/* --- Header Navigation Responsive Updates --- */\r
+@media screen and (max-width: 1024px) {\r
+  .navbar-container {\r
+    padding: 0 40px !important;\r
+  }\r
+  .nav-menu {\r
+    gap: 24px !important;\r
+  }\r
+}\r
+\r
+@media screen and (max-width: 768px) {\r
+  .navbar-container {\r
+    padding: 0 20px !important;\r
+  }\r
+  .nav-menu {\r
+    gap: 16px !important;\r
+  }\r
+}\r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <img src="https://unavatar.io/make.com" alt="Make.com" class="logo-img">\r
+          <span class="logo-text">Make.com</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://unavatar.io/manychat.com" alt="ManyChat" class="logo-img">\r
+          <span class="logo-text">ManyChat</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/n8n.png" alt="n8n" class="logo-img">\r
+          <span class="logo-text">n8n</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/zoho.svg" alt="Zoho CRM" class="logo-img">\r
+          <span class="logo-text">Zoho CRM</span>\r
+        </div>\r
+        <div class="marquee-logo">\r
+          <img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/zoho.svg" alt="Zoho Campaigns" class="logo-img">\r
+          <span class="logo-text">Zoho Campaigns</span>\r
+        </div>\r
+      </div>\r
+    </div>\r
+  </section>\r
+\r
+  <!-- Services Grid Section -->\r
+  <section class="section section-dark" id="services">\r
+    <div class="container">\r
+      <div class="section-header reveal-fade-up">\r
+        <span class="section-subtitle">Our Digital Solutions</span>\r
+        <h2 class="section-title">Our Digital Solutions</h2>\r
+        <p style="margin-top: 16px; font-size: 1rem;">We provide end-to-end digital services that help businesses grow, automate processes, improve customer engagement, and establish a strong online presence.</p>\r
+      </div>\r
+\r
+      <div class="services-grid">\r
+        <!-- Service Card 1 -->\r
+        <div class="service-card reveal-fade-up">\r
+          <div class="glass-card card-glow-border service-card-content">\r
+            <div class="premium-icon-box">\r
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" class="premium-svg">\r
+    <defs>\r
+      <linearGradient id="gold-fill" x1="0%" y1="0%" x2="100%" y2="100%">\r
+        <stop offset="0%" stop-color="#E6BC5A" stop-opacity="0.25"/>\r
+        <stop offset="100%" stop-color="#D4A23A" stop-opacity="0.05"/>\r
+      </linearGradient>\r
+    </defs>\r
+    <g stroke="#D4A23A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">\r
+\r
+      <rect x="8" y="12" width="32" height="24" rx="3" fill="url(#gold-fill)" />\r
+      <path d="M14 28v-4M20 28v-8M26 28v-12" />\r
+      <path d="M22 22l6-6 6 6" />\r
+      <path d="M28 16h6v6" />\r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">\r
+<div class="about-grid">\r
+\r
+<!-- About Left Column (Parallax Vector artwork) -->\r
+<div class="about-image-wrapper reveal-fade-up">\r
+<div class="about-image-card about-interactive-card" id="aboutInteractiveCard">\r
+<!-- Glass Frame Overlay -->\r
+<div class="about-card-glass-frame"></div>\r
+\r
+<!-- Drifting Holographic Volumetric Blobs -->\r
+<div class="about-card-blob blob-1"></div>\r
+      particles.push(new DustParticle());\r
+\r
+<!-- Vector Grid Background inside card -->\r
+<svg class="about-svg-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">\r
+<defs>\r
+<pattern id="about-grid" width="20" height="20" patternUnits="userSpaceOnUse">\r
+<path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(204, 164, 59, 0.08)" stroke-width="1"/>\r
+</pattern>\r
+</defs>\r
+<rect width="100%" height="100%" fill="url(#about-grid)" />\r
+</svg>\r
+\r
+<!-- Rotating Hologram Ring & HUD System -->\r
+<div class="about-hologram-rings">\r
+<div class="about-ring-outer"></div>\r
+<div class="about-ring-middle"></div>\r
+<div class="about-ring-inner"></div>\r
+<div class="about-ring-glow"></div>\r
+</div>\r
+\r
+<!-- Vertical Laser Scanner Sweep -->\r
+<div class="about-holo-scanner"></div>\r
+\r
+<!-- Floating Logo Orbiting Orb (Targeted by JS) -->\r
+<div class="about-logo-wrapper" id="aboutLogoWrapper">\r
+<img src="https://reachskyline.com/wp-content/uploads/2024/07/2idgJUanefZG50tflPep5TXxUPy.svg" alt="Reach Skyline Icon" class="about-logo-img">\r
+</div>\r
+</div>\r
+\r
+<!-- Floating Experience Badge -->\r
+<div class="about-badge">\r
+<div class="about-badge-icon">\r
+<i data-lucide="sparkles"></i>\r
+</div>\r
+<div>\r
+<div class="about-badge-num">8+</div>\r
+<div class="about-badge-text">Years of Experience</div>\r
+</div>\r
+</div>\r
+      \r
+      // Update floor shadow scale and opacity dynamically based on floatOffset\r
+      if (pedestalShadow) {\r
+        const shadowScale = 1.0 - (floatOffset + 16) * 0.005;\r
+        const shadowOpacity = 0.9 - (floatOffset + 16) * 0.01;\r
+        pedestalShadow.style.transform = `translate(-50%, -50%) rotateX(70deg) scale(${shadowScale})`;\r
+        pedestalShadow.style.opacity = shadowOpacity;\r
+      }\r
+      \r
+      // Apply centered 3D Y-rotation and float offsets (no wobble X/Z tilts)\r
+      logo3DContainer.style.transform = `\r
+        translate3d(0, ${floatOffset}px, 0)\r
+        rotateY(${currentAngleY}deg)\r
+      `;\r
+      \r
+      requestAnimationFrame(updateLogoRotation);\r
+    }\r
+    \r
+    updateLogoRotation();\r
+  }\r
+\r
+  // 19. Execution Pipeline Interactive Engine\r
+  const pipelineNodes = document.querySelectorAll('.orbit-node');\r
+  const pipelineCards = document.querySelectorAll('.pipeline-card');\r
+  const connectionLines = document.querySelectorAll('.connection-line');\r
+  \r
+  if (pipelineNodes.length && pipelineCards.length) {\r
+    function activateStep(stepNum) {\r
+      pipelineNodes.forEach(node => {\r
+        if (node.getAttribute('data-step') === stepNum) {\r
+          node.classList.add('active');\r
+        } else {\r
+\r
+<div>\r
+<a href="#footer" class="btn btn-primary btn-magnetic">Learn More About Us</a>\r
+</div>\r
+</div>\r
+\r
+</div>\r
+</div>\r
+</section>\r
+\r
+<!-- Why Choose Us / Features Grid (Dark Section) -->\r
+<section class="section section-dark" id="why-choose-us">\r
+<div class="container">\r
+<div class="section-header reveal-fade-up">\r
+<span class="section-subtitle">Why Choose Reach Skyline</span>\r
+<h2 class="section-title">Why Businesses Choose Reach Skyline</h2>\r
+</div>\r
+\r
+<div class="why-choose-grid">\r
+<!-- Feature 1 -->\r
+<div class="why-choose-card reveal-fade-up">\r
+<div class="glass-card card-glow-border why-choose-card-content">\r
+<div class="why-choose-icon-box">\r
+<i data-lucide="award"></i>\r
+</div>\r
+<h3 class="why-choose-title">Experienced Professionals</h3>\r
+<p class="why-choose-desc">A skilled team delivering innovative digital solutions tailored to every business.</p>\r
+</div>\r
+</div>\r
+\r
+<!-- Feature 2 -->\r
+<div class="why-choose-card reveal-fade-up delay-100">\r
+<div class="glass-card card-glow-border why-choose-card-content">\r
+<div class="why-choose-icon-box">\r
+<i data-lucide="target"></i>\r
+</div>\r
+<h3 class="why-choose-title">Result-Driven Strategies</h3>\r
+<p class="why-choose-desc">Focused on measurable growth, lead generation, and improved business performance.</p>\r
+</div>\r
+</div>\r
+\r
+<!-- Feature 3 -->\r
+<div class="why-choose-card reveal-fade-up delay-200">\r
+<div class="glass-card card-glow-border why-choose-card-content">\r
+<div class="why-choose-icon-box">\r
+<i data-lucide="heart"></i>\r
+</div>\r
+<h3 class="why-choose-title">Customer-Centric Approach</h3>\r
+<p class="why-choose-desc">Every solution is customized to meet your unique business objectives and customer needs.</p>\r
+</div>\r
+</div>\r
+\r
+<!-- Feature 4 -->\r
+<div class="why-choose-card reveal-fade-up">\r
+<div class="glass-card card-glow-border why-choose-card-content">\r
+<div class="why-choose-icon-box">\r
+<i data-lucide="cpu"></i>\r
+</div>\r
+<h3 class="why-choose-title">Latest Technologies</h3>\r
+<p class="why-choose-desc">Leveraging modern tools, platforms, and automation technologies for scalable growth.</p>\r
+</div>\r
+</div>\r
+\r
+<!-- Feature 5 -->\r
+<div class="why-choose-card reveal-fade-up delay-100">\r
+<div class="glass-card card-glow-border why-choose-card-content">\r
+<div class="why-choose-icon-box">\r
+<i data-lucide="sparkles"></i>\r
+</div>\r
+<h3 class="why-choose-title">Creative Innovation</h3>\r
+<p class="why-choose-desc">Combining creativity with technology to build memorable digital experiences.</p>\r
+</div>\r
+</div>\r
+\r
+<!-- Feature 6 -->\r
+<div class="why-choose-card reveal-fade-up delay-200">\r
+<div class="glass-card card-glow-border why-choose-card-content">\r
+<div class="why-choose-icon-box">\r
+<i data-lucide="handshake"></i>\r
+</div>\r
+<h3 class="why-choose-title">Long-Term Partnership</h3>\r
+<p class="why-choose-desc">Supporting clients beyond project delivery with continuous optimization and digital growth strategies.</p>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+</section>\r
+\r
+  \r
+  if (metricsGrid && counterElements.length) {\r
+    let triggered = false;\r
+    \r
+    const countUpObserver = new IntersectionObserver((entries) => {\r
+      entries.forEach(entry => {\r
+        if (entry.isIntersecting && !triggered) {\r
+          triggered = true;\r
+          counterElements.forEach(counter => {\r
+            const target = parseInt(counter.getAttribute('data-target'));\r
+            const duration = 2000;\r
+            const startTime = performance.now();\r
+            \r
+            function count(currentTime) {\r
+              const elapsed = currentTime - startTime;\r
+              const progress = Math.min(elapsed / duration, 1);\r
+        <h2 class="section-title">How We Transform Your Business</h2>\r
+        <p class="section-desc" style="max-width: 800px; margin: 16px auto 0 auto; color: #94A3B8;">From strategy to measurable growth, our streamlined execution framework combines creativity, technology, automation, and data-driven decision making to deliver scalable digital success.</p>\r
+      </div>\r
+\r
+      <div class="pipeline-split-layout">\r
+        <!-- Left Side: Interactive Workflow Projector -->\r
+        <div class="pipeline-left-visual">\r
+          <div class="pipeline-projector-scene" id="pipelineProjectorScene">\r
+            <!-- Center Hub -->\r
+            <div class="pipeline-center-hub">\r
+              <div class="hub-pulse"></div>\r
+              <div class="hub-content">\r
+                <span class="hub-label-sub">Reach Skyline</span>\r
+                <span class="hub-label-main">Digital Engine</span>\r
+              </div>\r
+            </div>\r
+\r
+            <!-- SVG connection lines with animation dashes / particles -->\r
+            <svg class="pipeline-connections-svg" viewBox="0 0 500 500" width="100%" height="100%">\r
+              <defs>\r
+                <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">\r
+                  <stop offset="0%" stop-color="#222222" />\r
+                  <stop offset="50%" stop-color="#333333" />\r
+                  <stop offset="100%" stop-color="#cca43b" />\r
+                </linearGradient>\r
+              </defs>\r
+              <!-- Connection paths from center (250, 250) to the six orbits -->\r
+              <path class="connection-line line-1" id="path-1" d="M 250,250 L 410,250" />\r
+              <path class="connection-line line-2" id="path-2" d="M 250,250 L 330,388" />\r
+              <path class="connection-line line-3" id="path-3" d="M 250,250 L 170,388" />\r
+              <path class="connection-line line-4" id="path-4" d="M 250,250 L 90,250" />\r
+              <path class="connection-line line-5" id="path-5" d="M 250,250 L 170,112" />\r
+              <path class="connection-line line-6" id="path-6" d="M 250,250 L 330,112" />\r
+              \r
+              <!-- Energy particles moving along lines -->\r
+              <circle class="energy-particle particle-1" r="3.5" fill="#cca43b" />\r
+              <circle class="energy-particle particle-2" r="3.5" fill="#cca43b" />\r
+              <circle class="energy-particle particle-3" r="3.5" fill="#cca43b" />\r
+              <circle class="energy-particle particle-4" r="3.5" fill="#cca43b" />\r
+              <circle class="energy-particle particle-5" r="3.5" fill="#cca43b" />\r
+              <circle class="energy-particle particle-6" r="3.5" fill="#cca43b" />\r
+            </svg>\r
+\r
+            <!-- Orbiting Stage Nodes -->\r
+            <div class="orbit-node node-1 active" data-step="1">\r
+              <div class="node-glass">\r
+                <div class="node-icon-box"><i data-lucide="search"></i></div>\r
+                <span class="node-label">Discover</span>\r
+              </div>\r
+            </div>\r
+            <div class="orbit-node node-2" data-step="2">\r
+              <div class="node-glass">\r
+                <div class="node-icon-box"><i data-lucide="target"></i></div>\r
+                <span class="node-label">Strategy</span>\r
+              </div>\r
+            </div>\r
+            <div class="orbit-node node-3" data-step="3">\r
+              <div class="node-glass">\r
+                <div class="node-icon-box"><i data-lucide="palette"></i></div>\r
+                <span class="node-label">Design</span>\r
+              </div>\r
+            </div>\r
+            <div class="orbit-node node-4" data-step="4">\r
+              <div class="node-glass">\r
+                <div class="node-icon-box"><i data-lucide="code"></i></div>\r
+                <span class="node-label">Develop</span>\r
+              </div>\r
+            </div>\r
+            <div class="orbit-node node-5" data-step="5">\r
+              <div class="node-glass">\r
+                <div class="node-icon-box"><i data-lucide="rocket"></i></div>\r
+                <span class="node-label">Launch</span>\r
+              </div>\r
+            </div>\r
+            <div class="orbit-node node-6" data-step="6">\r
+              <div class="node-glass">\r
+                <div class="node-icon-box"><i data-lucide="line-chart"></i></div>\r
+                <span class="node-label">Optimize</span>\r
+              </div>\r
+            </div>\r
+          </div>\r
+        </div>\r
+\r
+        <!-- Right Side: Pipeline Cards list -->\r
+        <div class="pipeline-right-cards">\r
+          <!-- Step 1 Card -->\r
+          <div class="pipeline-card active" data-step="1">\r
+            <div class="pipeline-card-glow"></div>\r
+            <div class="pipeline-step-badge">Step 01</div>\r
+            <div class="pipeline-card-header">\r
+              <div class="pipeline-card-icon"><i data-lucide="search"></i></div>\r
+              <h3 class="pipeline-card-title">Discover</h3>\r
+            </div>\r
+            <p class="pipeline-card-desc-short">Understand business goals, audience, competitors, and opportunities.</p>\r
+    }, 400);\r
+  });\r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <ul class="footer-links">\r
+            <li><a href="#home">Home</a></li>\r
+            <li><a href="#about">About</a></li>\r
+            <li><a href="#services">Services</a></li>\r
+            <li><a href="#industries">Industries</a></li>\r
+            <li><a href="#portfolio">Portfolio</a></li>\r
+            <li><a href="#insights">Insights</a></li>\r
+            <li><a href="#footer">Contact</a></li>\r
+    \r
+        \r
+      </ul>\r
+        </div>\r
+\r
+        <!-- Services Column -->\r
+        <div>\r
+          <h4 class="footer-title">Services</h4>\r
+          <ul class="footer-links">\r
+            <li><a href="#services">Digital Marketing</a></li>\r
+            <li><a href="#services">Marketing Automation</a></li>\r
+            <li><a href="#services">Branding</a></li>\r
+            <li><a href="#services">Web Design & Development</a></li>\r
+            <li><a href="#services">Customer Experience</a></li>\r
+            <li><a href="#services">Business Consulting</a></li>\r
+    \r
+        \r
+      </ul>\r
+        </div>\r
+\r
+        <!-- Contact & Newsletter Column -->\r
+        <div class="footer-newsletter">\r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <input type="email" class="newsletter-input" placeholder="Your Email Address" aria-label="Email Address" required>\r
+            <button class="newsletter-btn" aria-label="Subscribe to newsletter">\r
+              <i data-lucide="send" class="newsletter-icon"></i>\r
+            </button>\r
+          </form>\r
+        </div>\r
+      </div>\r
+\r
+      <!-- Footer Bottom -->\r
+      <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">\r
+        <div class="copyright">\r
+          © 2026 Reach Skyline. All Rights Reserved.\r
+        </div>\r
+        <div class="social-links" style="display: flex; gap: 18px; align-items: center;">\r
+          <a href="#" class="social-premium"><i data-lucide="linkedin"></i></a>\r
+          <a href="#" class="social-premium"><i data-lucide="instagram"></i></a>\r
+          <a href="#" class="social-premium"><i data-lucide="twitter"></i></a>\r
+        </div>\r
+      </div>\r
+    </div>\r
+  </footer>\r
+\r
+  <!-- Back to Top Button -->\r
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">\r
+    <i data-lucide="arrow-up" class="back-to-top-icon"></i>\r
+  </button>\r
+\r
+  <!-- Scripts -->\r
+  <!-- Lucide Icons Library -->\r
+  <script src="https://unpkg.com/lucide@latest"></script>\r
+  <script src="script.js"></script>\r
+</body>\r
+</html>\r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social-icon:hover {\r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social-premium {\r
