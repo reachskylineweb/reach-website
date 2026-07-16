@@ -1,9 +1,0 @@
-<!DOCTYPE.*?</html.*?>)', line, re.DOTALL | re.IGNORECASE)
-            for m in matches:
-                html_blocks.append(m)
-                
-            matches2 = re.findall(r'(<html.*?</html.*?>)', line, re.DOTALL | re.IGNORECASE)
-            for m in matches2:
-                html_blocks.append(m)
-                
-            matches3 = re.findall(r'(<head.*?</body.*?>
